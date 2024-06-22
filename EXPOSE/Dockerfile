@@ -1,0 +1,2 @@
+FROM alamlinux:9
+EXPOSE 80/TCP
