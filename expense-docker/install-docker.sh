@@ -9,5 +9,5 @@ yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-co
 systemctl start docker
 systemctl enable docker
 usermod -aG docker ec2-user
-echo -e "$R Logout and Login again"
+echo -e "$R Logout and Login again $N"
 
