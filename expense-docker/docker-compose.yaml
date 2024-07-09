@@ -2,10 +2,14 @@ name: expense
 networks:
   default:
     name: expense
+volumes:
+  mysql: #docker volume 
 services:
   mysql:
     image: mysql:v1.0.0
     container_name: mysql
+    volumes:
+      - mysql:/var/lib/mysql #-v volume-name:/pathincontainer
   backend:
     image: backend:v1.0.0
     container_name: backend
